@@ -1,0 +1,23 @@
+{
+  "name": "9-canvasimage",
+  "version": "1.0.0",
+  "description": "Using images on the canvas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --s --f *.js, *.html, *.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanpadilla/9-canvasImage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estebanpadilla/9-canvasImage/issues"
+  },
+  "homepage": "https://github.com/estebanpadilla/9-canvasImage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6"
+  }
+}
