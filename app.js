@@ -1,13 +1,14 @@
 window.addEventListener('load', init, false);
 function init() {
 
-    var canvas;
-    var context;
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
 
-    canvas = createCanvas(width, height);
-    context = canvas.getContext('2d');
+    let canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
+    canvas.width = width;
+    canvas.height = height;
+    let context = canvas.getContext('2d');
 
     //Add a simple image to the canvas.
     var image = new Image();
@@ -69,6 +70,7 @@ function init() {
         }
     }
 
+
     sprite.onload = function () {
         window.setInterval(updateSprite, frameRate);
     };
@@ -89,12 +91,3 @@ function init() {
     update();
 }
 
-function createCanvas(width, height) {
-    var canvas = document.createElement('canvas');
-    document.body.appendChild(canvas);
-    canvas.style.position = 'absolute';
-    canvas.width = width;
-    canvas.height = height;
-    canvas.style.background = 'white';
-    return canvas;
-}
